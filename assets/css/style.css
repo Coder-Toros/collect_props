@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+}
+:root{
+  font-size: 1.2rem;
+}
+a{
+  margin-left: 20px;
+}
+
+button{
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+}
+input{
+  margin-top: 20px;
+  text-align: left;
+  font-size: 25px;
+  min-width: 350px;
+}
+label{
+  /* border: 1px solid; */
+  width: 100px;
+  display: inline-block;
+  margin: 10 10;
+  height: 50px;
+  padding-top: 20px;
+  text-align: left;
+}
+span{
+  display: inline-block;
+  width: 250px;
+  height: 30px;
+  border: 2px solid blue;
+  margin-top: 20px;
+  font-size: 25px;
+}
+.btn{
+  max-width: 300px;
+}
+#error{
+  color: red;
+}
+#person{
+  max-width: 600px;
+  height: 400px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#person > div{
+  border: 1px solid green;
+  margin: 10 10;
+  width: 500px;
+  height: 70px;
+  min-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
