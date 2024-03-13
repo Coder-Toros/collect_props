@@ -1,10 +1,7 @@
 'use strict';
 
+const inputs = Array.from(document.querySelectorAll('input'));
 const submit = document.querySelector('button[type=submit]');
-const fName = document.querySelector('#f-name');
-const lName = document.querySelector('#l-name');
-const email = document.querySelector('#email');
-const nickName = document.querySelector('#nick-name');
 
 class Person {
   constructor(firstName, lastName, email, nickName) {
@@ -17,12 +14,8 @@ class Person {
 
 function getData(e) {
   e.preventDefault();
-  const person = new Person(
-    fName.value,
-    lName.value,
-    email.value,
-    nickName.value
-  );
+  
+  const person = new Person(...inputs.map(el => el.value))
 
   localStorage.setItem(`${person.lastName}`,
                        `${JSON.stringify(person)}`);
